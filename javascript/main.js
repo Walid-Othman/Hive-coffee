@@ -30,3 +30,15 @@ const typedcomingsoon = new Typed('.coming-soon', {
 });
 
 
+function anmation(){
+let cards =  document.querySelector('.cards')
+window.addEventListener('scroll',()=>{
+  if(window.scrollY >=70){
+cards.classList.add('animate__animated', 'animate__bounce', 'animate__slideInRight')
+  }else{
+    cards.classList.remove('animate__animated', 'animate__bounce', 'animate__slideInRight')
+  }
+})
+}
+
+anmation()

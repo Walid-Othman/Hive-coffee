@@ -71,14 +71,17 @@ a {
   width: 100%;
   height: 80vh;
 }
-.typed-c-three,
-.typed-c-two{
-  height: 30px;
-  color: var(--theired-color);
-}
-.carousel h5{
+
+.carousel h5 {
   color: var(--theired-color);
   font-size: 32px !important;
+}
+
+.typed-c-three,
+.typed-c-two {
+  height: 30px;
+  color: var(--theired-color);
+  margin-bottom: 40px;
 }
 
 
@@ -103,9 +106,6 @@ a {
   margin-bottom: 50px;
 }
 
-.cards-coming-soon .head h1 {
-  color: var(--black-color);
-}
 
 .cards-coming-soon .head p {
   color: var(--first-color);
@@ -125,6 +125,13 @@ a {
 
 .cards-coming-soon .cards .card {
   border-radius: 70px 0px 40px 0;
+  box-shadow: 5px 5px 10px gray;
+  transition: 0.5s ease;
+}
+
+.cards-coming-soon .cards .card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .cards-coming-soon .cards .card img {
@@ -222,6 +229,13 @@ footer a:hover {
   .navbar-nav {
     margin-left: 100px;
   }
+  .navbar-nav {
+    margin-left: 0px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
 }
 
 @media(max-width:1000px) {
@@ -230,11 +244,11 @@ footer a:hover {
 
   }
 
-.navbar button:hover {
+  .navbar button:hover {
     background-color: #fbfaf9;
     outline: none;
     border: none;
-}
+  }
 
   .navbar-light .navbar-toggler {
     color: #fffdf9;
@@ -242,32 +256,49 @@ footer a:hover {
     border: none !important;
     outline: none !important;
   }
-  .sectionp1{
+
+  .sectionp1 {
     padding: 30px 30px;
   }
 }
 
-@media(max-width:499px){
-   .sectionp1{
+@media(max-width:499px) {
+  .sectionp1 {
     padding: 10px 15px;
   }
+
   .cards-coming-soon .cards {
-  margin: 50px 0;
-}
-.carousel img {
-    height: 50vh;
+    margin: 50px 0;
+  }
+
+  .carousel img {
+    height: 60vh;
     width: 100%;
-}
-.carousel-control-next-icon, .carousel-control-prev-icon {
+  }
 
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    display: none;
     margin-top: -254px;
-}
-.shap img {
-    margin: -231px auto 30px auto;
+  }
 
+  .shap img {
+    margin: -100px auto 30px auto;
+
+  }
+
+  .cards-coming-soon .head p {
+
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    display: none;
+  }
 }
-.cards-coming-soon .head p {
- 
-    padding-bottom: 30px;
-}
+
+html,
+body {
+  overflow-x: hidden;
 }
