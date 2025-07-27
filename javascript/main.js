@@ -32,11 +32,17 @@ const typedcomingsoon = new Typed('.coming-soon', {
 
 function anmation(){
 let cards =  document.querySelector('.cards')
+let cardsD = document.querySelector('.section-different')
 window.addEventListener('scroll',()=>{
   if(window.scrollY >=70){
 cards.classList.add('animate__animated', 'animate__bounce', 'animate__slideInRight')
   }else{
     cards.classList.remove('animate__animated', 'animate__bounce', 'animate__slideInRight')
+  }
+  if(window.scrollY >=1000){
+cardsD.classList.add('animate__animated','animate__bounce','animate__slideInLeft')
+  }else{
+cardsD.classList.remove('animate__animated','animate__bounce','animate__slideInLeft')
   }
 })
 }

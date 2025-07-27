@@ -252,7 +252,13 @@ footer a:hover {
 
   .navbar-light .navbar-toggler {
     color: #fffdf9;
-    border-color: #ffffff;
+    border-color:transparent;
+    border: none !important;
+    outline: none !important;
+  }
+  .navbar-light .navbar-toggler:hover {
+    color: transparent;
+    border-color:transparent;
     border: none !important;
     outline: none !important;
   }
@@ -263,6 +269,11 @@ footer a:hover {
 }
 
 @media(max-width:499px) {
+  .navbar-nav li a {
+
+  font-size: 16px;
+
+}
   .sectionp1 {
     padding: 10px 15px;
   }
