@@ -241,8 +241,12 @@ footer a:hover {
 @media(max-width:1000px) {
   .navbar-nav {
     margin-left: 0px;
+    
 
   }
+  .navbar {
+border-radius: 0px 0px 20px 20px;
+}
 
   .navbar button:hover {
     background-color: #fbfaf9;
